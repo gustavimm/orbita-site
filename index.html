@@ -140,10 +140,9 @@
     display:flex;align-items:center;gap:18px;
     font-size:17px;
   }
-  .id-item .tag{
-    flex:none;font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:600;
-    color:var(--bg-deep);background:var(--accent);
-    padding:4px 10px;border-radius:999px;letter-spacing:0.02em;
+  .id-item::before{
+    content:'';flex:none;width:8px;height:8px;border-radius:50%;
+    background:var(--accent);
   }
   .id-item span.txt{color:var(--text);}
 
@@ -253,10 +252,10 @@
       <h2>O que trava o seu dia a dia</h2>
     </div>
     <div class="id-list">
-      <div class="id-item"><span class="tag">isso sou eu</span><span class="txt">Você monta orçamento na mão, todo dia, pro mesmo tipo de pedido.</span></div>
-      <div class="id-item"><span class="tag">isso sou eu</span><span class="txt">Cliente falta e você só descobre quando já é tarde pra reorganizar a agenda.</span></div>
-      <div class="id-item"><span class="tag">isso sou eu</span><span class="txt">Cobrança virou aquela ligação incômoda no fim do mês.</span></div>
-      <div class="id-item"><span class="tag">isso sou eu</span><span class="txt">Você sabe que um sistema ajudaria, mas não tem tempo de procurar um.</span></div>
+      <div class="id-item"><span class="txt">Você monta orçamento na mão, todo dia, pro mesmo tipo de pedido.</span></div>
+      <div class="id-item"><span class="txt">Cliente falta e você só descobre quando já é tarde pra reorganizar a agenda.</span></div>
+      <div class="id-item"><span class="txt">Cobrança virou aquela ligação incômoda no fim do mês.</span></div>
+      <div class="id-item"><span class="txt">Você sabe que um sistema ajudaria, mas não tem tempo de procurar um.</span></div>
     </div>
   </div>
 </section>
@@ -348,7 +347,7 @@
     <h2>Qual parte do seu dia mais te trava hoje?</h2>
     <p>Chama no WhatsApp e a gente marca um diagnóstico de 15–20 minutos, sem compromisso.</p>
     <div class="contact-row">
-      <a class="btn btn-primary" href="https://wa.me/5522988479687" target="_blank" rel="noopener">Falar com Gustavo</a>
+      <a class="btn btn-ghost" href="https://wa.me/5522988479687" target="_blank" rel="noopener">Falar com Gustavo</a>
       <a class="btn btn-ghost" href="https://wa.me/554599691085" target="_blank" rel="noopener">Falar com Lucas</a>
       <a class="btn btn-ghost" href="mailto:weorbita@gmail.com">weorbita@gmail.com</a>
     </div>
